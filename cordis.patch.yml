@@ -1,0 +1,12 @@
+# Bundle patch for dsh-paper-download.
+#
+# One loader row serves both halves: `lib/index.js` is the Host plugin and,
+# because package.json declares `dsh.client`, `lib/client.js` is the browser
+# bundle served by dsh-client-modules for that same row.
+#
+# Disable it from a higher patch layer with:
+#   - id: paper-download
+#     disabled: true
+- insert:
+    - id: paper-download
+      name: "dsh-paper-download"

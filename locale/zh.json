@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "文献下载",
+    "description": "在左侧面板输入论文标题或 DOI，自动从 Unpaywall / Semantic Scholar / arXiv 等开放获取来源下载 PDF，并按「年份 - 期刊 - 标题」命名保存到所选目录（默认桌面）。"
+  }
+}

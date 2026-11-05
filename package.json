@@ -1,0 +1,60 @@
+{
+  "name": "dsh-paper-download",
+  "version": "1.0.0",
+  "description": "文献下载：在左侧面板输入论文标题或 DOI，自动检索开放获取 PDF 并按规范命名保存到所选目录。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/shared.js",
+    "lib/journal.js",
+    "lib/journals.json",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "literature",
+    "paper",
+    "pdf",
+    "open-access",
+    "unpaywall",
+    "arxiv",
+    "doi"
+  ],
+  "author": "朱骏 (Zhu Jun)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usagi826/dsh-paper-download.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Usagi826/dsh-paper-download/issues"
+  },
+  "homepage": "https://github.com/Usagi826/dsh-paper-download#readme",
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Dependencies are installed by the DSH profile, never committed.
+node_modules/
+
+# Release artefacts and local archives.
+*.zip
+*.tgz
+*.7z
+
+# Logs and editor / OS noise.
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment files (may hold a real contact e-mail).
+.env
+.env.*
+
+# Editor and IDE state.
+.vscode/
+.idea/
+*.swp

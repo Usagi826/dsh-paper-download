@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Paper Download",
+    "description": "Type a paper title or DOI in the left sidebar panel to fetch its open-access PDF from Unpaywall, Semantic Scholar, arXiv and other OA sources, then save it into the chosen folder (Desktop by default) as \"year - venue - title.pdf\"."
+  }
+}
