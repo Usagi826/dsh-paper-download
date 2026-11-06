@@ -33,3 +33,5 @@ desktop.ini
 # Publish helper (holds a GitHub token, never commit).
 .publish.token
 .publish/
+
+publish.cjs

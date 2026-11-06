@@ -121,16 +121,9 @@
 
 ## 开发与发布
 
-在仓库目录执行下列命令即可发布；每次发版改 `package.json` 的 `version` 并打 tag（`git tag v1.0.1 && git push --tags`）。
-改动记录见 [CHANGELOG.md](CHANGELOG.md)。
-
-```powershell
-git init -b main
-git add .
-git commit -m "feat: 文献下载插件 v1.0.0"
-git remote add origin https://github.com/Usagi826/dsh-paper-download.git
-git push -u origin main
-```
+- 修改 `lib/`、`locale/`、`package.json` 等文件后，把 `package.json` 的 `version` 递增，并在 [CHANGELOG.md](CHANGELOG.md) 记一条。
+- 发布：在插件目录执行 **`node publish.cjs`**，会把当前文件直接上传到本仓库；提交说明默认为空，只记录上传时间。
+- 该脚本通过 GitHub API 上传，只发布 `package.json`、`cordis.patch.yml`、`icon.svg`、`README.md`、`CHANGELOG.md`、`LICENSE`、`.gitignore`、`lib/`、`locale/`；脚本自身与本地令牌文件不会出现在仓库里。
 
 ## 许可
 
