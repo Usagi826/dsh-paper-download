@@ -22,3 +22,14 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Never publish local secrets or generated key material.
+.keygen/
+.id_ed25519_preview
+.id_ed25519_preview.pub
+.sshwork/
+.sshkeygen.err
+
+# Publish helper (holds a GitHub token, never commit).
+.publish.token
+.publish/
